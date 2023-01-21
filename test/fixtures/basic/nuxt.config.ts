@@ -11,6 +11,14 @@ declare module 'nitropack' {
 }
 
 export default defineNuxtConfig({
+  // For testing in this PR - remove before merge
+  typescript: {
+    tsConfig: {
+      compilerOptions: {
+        moduleResolution: 'Node16'
+      }
+    }
+  },
   app: {
     pageTransition: true,
     layoutTransition: true,
